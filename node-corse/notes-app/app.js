@@ -1,12 +1,3 @@
-const fs = require('fs');
+const name = require('./utils.js');
 
-//fs.writeFileSync('notes.txt', 'I am smash');
-
-//
-// Challenge: Append a message to notes.txt
-//
-// 1. Use appendFileSync to append to the file
-// 2. Run the script
-// 3. Check your work by opening the file and viewing the appended text
-
-fs.appendFileSync('notes.txt', '\nI like to smash!');
+console.log(name);
