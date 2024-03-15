@@ -9,4 +9,4 @@ const fs = require('fs');
 // 2. Run the script
 // 3. Check your work by opening the file and viewing the appended text
 
-fs.appendFileSync('notes.txt', 'I like to smash!');
+fs.appendFileSync('notes.txt', '\nI like to smash!');
