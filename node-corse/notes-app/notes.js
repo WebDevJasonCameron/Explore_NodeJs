@@ -6,6 +6,27 @@ const getNotes = function () {
 
 const addNote = function (title, body) {
 	const notes = loadNotes();
+	const duplicateNOtes = notes.filter(function (note) {
+		return note.title === title;
+	});
+
+	if (duplicateNOtes.length == 0) {
+		notes.push({
+			title: title,
+			body: body,
+		});
+
+		saveNotes(notes);
+
+		console.log('New Note Added');
+	} else {
+		console.log('Note Title Taken!');
+	}
+};
+
+const saveNotes = function (notes) {
+	const dataJSON = JSON.stringify(notes);
+	fs.writeFileSync('notes.json', dataJSON);
 };
 
 const loadNotes = function () {
