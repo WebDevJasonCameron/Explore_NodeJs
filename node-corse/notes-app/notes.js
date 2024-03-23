@@ -1,6 +1,7 @@
 const fs = require('fs');
 const chalk = require('chalk');
 
+// MTHs
 const getNotes = () => {
 	return 'your notes...';
 };
@@ -23,7 +24,7 @@ const addNote = (title, body) => {
 
 const removeNote = (title) => {
 	const notes = loadNotes();
-	const notesToKeep = notes.filter((note) => ] note.title !== title);
+	const notesToKeep = notes.filter((note) => note.title !== title);
 
 	if (notes.length > notesToKeep.length) {
 		console.log(chalk.green.inverse('Note Removed!'));
@@ -31,6 +32,15 @@ const removeNote = (title) => {
 	} else {
 		console.log(chalk.red.inverse('No note found!'));
 	}
+};
+
+const listNotes = () => {
+	console.log(chalk.inverse('Your notes'));
+	const notes = loadNotes();
+
+	notes.forEach((note) => {
+		console.log(note.title);
+	});
 };
 
 const saveNotes = (notes) => {
@@ -48,8 +58,10 @@ const loadNotes = () => {
 	}
 };
 
+// EX
 module.exports = {
 	getNotes: getNotes,
 	addNote: addNote,
 	removeNote: removeNote,
+	listNotes: listNotes,
 };
