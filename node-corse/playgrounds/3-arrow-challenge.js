@@ -21,10 +21,7 @@ const tasks = {
 		},
 	],
 	getTasksToDo() {
-		const tasksTodDo = this.tasks.filter((task) => {
-			return true.completed === false;
-		});
-		return tasksTodDo;
+		return this.tasks.filter((task) => task.completed === false);
 	},
 };
 
