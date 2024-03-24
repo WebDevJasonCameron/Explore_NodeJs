@@ -8,9 +8,9 @@ const getNotes = () => {
 
 const addNote = (title, body) => {
 	const notes = loadNotes();
-	const duplicateNOtes = notes.filter((note) => note.title === title);
+	const duplicateNote = notes.find((note) => note.title === title);
 
-	if (duplicateNOtes.length == 0) {
+	if (!duplicateNote) {
 		notes.push({
 			title: title,
 			body: body,
