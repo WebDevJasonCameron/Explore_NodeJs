@@ -1,11 +1,22 @@
-console.log('Starting');
+const axios = require('axios');
+const api = require('./api.js');
 
-setTimeout(() => {
-	console.log('2 Second Timer');
-}, 2000);
+const KEY = api.API;
 
-setTimeout(() => {
-	console.log('0 Second Timer');
-}, 0);
+// const url = `https://api.openweathermap.org/data/2.5/weather?lat=37.8267&lon=-122.4233&appid=${PW}`;
 
-console.log('Stopping');
+console.log(KEY);
+
+/*
+axios
+	.get(url)
+	.then((res) => {
+		const wx = res;
+		const msg = wx.data.main.temp;
+
+		console.log(msg);
+	})
+	.catch((err) => {
+		console.log('Error: ' + err.response.data.message);
+	});
+*/
