@@ -1,17 +1,18 @@
 const axios = require('axios');
-const api = require('./api.js');
+const apis = require('./api.js');
 
-const KEY = api.API;
+const WX_KEY = apis.WX_API;
+const MAPBOX_KEY = apis.MAPBOX_API;
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=37.8267&lon=-122.4233&appid=${KEY}`;
-
-console.log(url);
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=37.8267&lon=-122.4233&appid=${WX_KEY}`;
 
 axios
 	.get(url)
 	.then((res) => {
 		const wx = res;
-		const msg = wx.data.main.temp;
+		const temp = wx.data.main.temp;
+		const tempFeel = wx.data.main.feels_like;
+		const msg = `Current temperature is ${temp} but it feels like ${tempFeel}`;
 
 		console.log(msg);
 	})
