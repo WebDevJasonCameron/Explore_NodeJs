@@ -3,11 +3,10 @@ const api = require('./api.js');
 
 const KEY = api.API;
 
-// const url = `https://api.openweathermap.org/data/2.5/weather?lat=37.8267&lon=-122.4233&appid=${PW}`;
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=37.8267&lon=-122.4233&appid=${KEY}`;
 
-console.log(KEY);
+console.log(url);
 
-/*
 axios
 	.get(url)
 	.then((res) => {
@@ -19,4 +18,3 @@ axios
 	.catch((err) => {
 		console.log('Error: ' + err.response.data.message);
 	});
-*/
