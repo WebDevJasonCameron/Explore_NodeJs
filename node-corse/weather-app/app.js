@@ -22,21 +22,18 @@ axios
 	});
 */
 
-const gecode = (address, callback) => {
-	const place = 'Huntsville';
+const geocode = (address, callback) => {
 	const key = MAPBOX_KEY;
-	const url = `https://api.mapbox.com/search/searchbox/v1/suggest?q=${place}?access_token=${key}`;
-
+	const url = `https://api.mapbox.com/search/searchbox/v1/suggest?q=${address}?language=en&limit=1&?access_token=${key}`;
 	axios.get(url).then((res) => {
-		const data = res;
-		console.log(data);
+		if (err) {
+			console.log(err);
+		} else {
+			callback(res);
+		}
 	});
 };
 
-gecode('Huntsville', (err, res) => {
-	if (err) {
-		console.log(err);
-	} else {
-		console.log(res);
-	}
+geocode('Huntsville', (err, data) => {
+	console.log(data);
 });
