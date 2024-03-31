@@ -11,5 +11,3 @@
    `npm install axios`
 
 3. Create Files: Inside your project directory, create three files: `index.html`, `styles.css`, and `script.js`.
-
-##
