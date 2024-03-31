@@ -5,18 +5,19 @@ const searchingMonster = (monsterName) => {
 
 	axios.get('https://www.dnd5eapi.co/api/monsters').then((res) => {
 		const monsters = res.data.results;
-		console.log(monsters);
 		const matchedMonster = monsters.find(
 			(monster) => monster.name.toLowerCase() === monsterName
 		);
-
 		if (matchedMonster) {
 			axios
-				.get(matchedMonster.url)
+				.get(`https://www.dnd5eapi.co${matchedMonster.url}`)
 				.then((monsterResponse) => {
-					const monsterData = monsterResponse.data;
-					console.log(monsterData.name);
-					console.log(monsterData.index);
+					// const monsterData = JSON.parse(monsterResponse);
+					console.log(monsterResponse);
+					// console.log(monsterData.index);
+					// console.log(monsterData.name);
+					// console.log(monsterData.size);
+					// console.log(monsterData.type);
 				})
 				.catch((err) => {
 					console.log('Error fetching monster details.');
