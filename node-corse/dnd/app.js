@@ -12,12 +12,12 @@ const searchingMonster = (monsterName) => {
 			axios
 				.get(`https://www.dnd5eapi.co${matchedMonster.url}`)
 				.then((monsterResponse) => {
-					// const monsterData = JSON.parse(monsterResponse);
-					console.log(monsterResponse);
-					// console.log(monsterData.index);
-					// console.log(monsterData.name);
-					// console.log(monsterData.size);
-					// console.log(monsterData.type);
+					const monsterData = monsterResponse.data;
+					console.log(monsterData);
+					console.log(monsterData.index);
+					console.log(monsterData.name);
+					console.log(monsterData.size);
+					console.log(monsterData.type);
 				})
 				.catch((err) => {
 					console.log('Error fetching monster details.');
