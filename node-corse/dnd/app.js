@@ -13,7 +13,6 @@ const searchingMonster = (monsterName) => {
 				.get(`https://www.dnd5eapi.co${matchedMonster.url}`)
 				.then((monsterResponse) => {
 					const monsterData = monsterResponse.data;
-					console.log(monsterData);
 					console.log(monsterData.index);
 					console.log(monsterData.name);
 					console.log(monsterData.size);
