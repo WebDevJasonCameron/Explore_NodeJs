@@ -24,7 +24,7 @@ function searchMonster(monsterName) {
 
 			if (matchedMonster) {
 				axios
-					.get(matchedMonster.url)
+					.get(`https://www.dnd5eapi.co${matchedMonster.url}`)
 					.then((monsterResponse) => {
 						const monsterData = monsterResponse.data;
 						monsterResult.innerHTML = `

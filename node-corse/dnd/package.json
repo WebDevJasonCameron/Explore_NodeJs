@@ -1,7 +1,7 @@
 {
   "name": "dnd",
   "version": "1.0.0",
-  "description": "",
+  "description": "#### Following are instructions that come from: (D&D 5e SRD API)[https://5e-bits.github.io/docs/docs/tutorials/advanced/monster-search-with-javascript#setting-up-the-project]",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.8"
-  }
+  },
+  "devDependencies": {}
 }
