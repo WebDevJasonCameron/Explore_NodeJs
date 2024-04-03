@@ -12,7 +12,7 @@ const geocode = (address, key) => {
 		responseType: 'json',
 	})
 		.then((res) => {
-			console.log(res);
+			console.log(res.data.features);
 		})
 		.catch((err) => {
 			console.log(url);
