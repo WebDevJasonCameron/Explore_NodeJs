@@ -21,7 +21,6 @@ const forecast = (coord, callback) => {
 		});
 };
 
-//forecast([-75.7088, 44.1545]);
 module.exports = {
 	forecast: forecast,
 };
