@@ -1,18 +1,23 @@
 const geocodeApp = require('./utils/geocode');
 const forecastApp = require('./utils/forecast');
 
-geocodeApp.geocode('seattle', (coord) => {
-	console.log(coord);
+const address = process.argv[[2]];
 
-	if (coord === 'error') {
-		console.log('app.js error at the geocodeApp');
-	} else {
+if (!address) {
+	console.log('Please provide an address. ');
+} else {
+	geocodeApp.geocode(address, (coord) => {
+		console.log(coord);
+
+		if (coord === 'error') {
+			return 'app.js error at the geocodeApp';
+		}
+
 		forecastApp.forecast(coord, (data) => {
 			if (data === 'error') {
-				console.log('app.js error at the forecastApp');
-			} else {
-				console.log(data);
+				return 'app.js error at the forecastApp';
 			}
+			console.log(data);
 		});
-	}
-});
+	});
+}
