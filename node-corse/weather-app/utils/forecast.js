@@ -1,7 +1,9 @@
 const axios = require('axios');
 const apis = require('../api.js');
 
-const forecast = (lat, long) => {
+const forecast = (coord, callback) => {
+	const lat = coord[0];
+	const long = coord[1];
 	const key = apis.WX_API;
 	const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
 
@@ -11,7 +13,7 @@ const forecast = (lat, long) => {
 		responseType: 'json',
 	})
 		.then((res) => {
-			return res.data;
+			callback(res.data);
 		})
 		.catch((err) => {
 			console.log(url);
@@ -19,4 +21,7 @@ const forecast = (lat, long) => {
 		});
 };
 
-forecast(-75.7088, 44.1545);
+//forecast([-75.7088, 44.1545]);
+module.exports = {
+	forecast: forecast,
+};
