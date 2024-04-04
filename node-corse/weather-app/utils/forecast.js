@@ -18,6 +18,7 @@ const forecast = (coord, callback) => {
 		.catch((err) => {
 			console.log(url);
 			console.log('It did not work... ' + err);
+			return 'error';
 		});
 };
 

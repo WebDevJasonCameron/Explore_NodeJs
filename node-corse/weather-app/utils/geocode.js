@@ -15,6 +15,7 @@ const geocode = (address, callback) => {
 		})
 		.catch((err) => {
 			console.log('No map data here... ' + err);
+			return 'error';
 		});
 };
 

@@ -1,10 +1,18 @@
 const geocodeApp = require('./utils/geocode');
 const forecastApp = require('./utils/forecast');
 
-geocodeApp.geocode('huntsville al', (coord) => {
+geocodeApp.geocode('seattle', (coord) => {
 	console.log(coord);
 
-	forecastApp.forecast(coord, (data) => {
-		console.log(data);
-	});
+	if (coord === 'error') {
+		console.log('app.js error at the geocodeApp');
+	} else {
+		forecastApp.forecast(coord, (data) => {
+			if (data === 'error') {
+				console.log('app.js error at the forecastApp');
+			} else {
+				console.log(data);
+			}
+		});
+	}
 });
