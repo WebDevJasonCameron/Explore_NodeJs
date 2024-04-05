@@ -15,10 +15,17 @@ const product = {
 	price: 3,
 	stock: 201,
 	saleprice: undefined,
+	rating: 4.2,
 };
 
 const { label: productLabel, stock, rating = 5 } = product;
 
-console.log(productLabel);
-console.log(stock);
-console.log(rating);
+// console.log(productLabel);
+// console.log(stock);
+// console.log(rating);
+
+const transaction = (type, myProduct) => {
+	const { label } = myProduct;
+};
+
+transaction('order', product);
