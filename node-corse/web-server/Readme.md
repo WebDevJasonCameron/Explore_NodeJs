@@ -12,3 +12,12 @@
 
 - use path from node.js
 - you can man with `__dirname`
+- use `app.use()` with path to the public dir
+
+## Using
+
+- using handlebars from node.js... specifically, he uses hbs from https://www.npmjs.com/package/hbs
+- to set it up, after install, add `app.set('view engine', 'hbs')`
+- create a view directory within the main public directory
+- replace the index.html inside your public directory with an index.hbs. Make sure all the content is the same between html and hbs. remove the index.html file
+- add a route with `app.get()` as seen within our server app.js file to allow user access to the hbs file. Note: this is useing a `res.render('index')` function to show the hbs view
