@@ -6,3 +6,4 @@
 - make an app.js file inside src
 - add express to the app.js ... See the app.js for details
 - start the server with `node src/app.js`
+- you can use `nodemon src/app.js` instead
