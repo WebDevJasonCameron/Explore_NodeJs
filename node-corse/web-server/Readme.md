@@ -7,3 +7,8 @@
 - add express to the app.js ... See the app.js for details
 - start the server with `node src/app.js`
 - you can use `nodemon src/app.js` instead
+
+## Serving the fix file from public dir
+
+- use path from node.js
+- you can man with `__dirname`
