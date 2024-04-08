@@ -21,3 +21,9 @@
 - create a view directory within the main public directory
 - replace the index.html inside your public directory with an index.hbs. Make sure all the content is the same between html and hbs. remove the index.html file
 - add a route with `app.get()` as seen within our server app.js file to allow user access to the hbs file. Note: this is useing a `res.render('index')` function to show the hbs view
+
+## Changing Views
+
+- change view directory to 'templates'
+- add `const viewsPath = path.join(__dirname, '../templates')` within the app.js file
+- add `app.set('views', viewsPath)` within the app.js file to fix the broken path links
