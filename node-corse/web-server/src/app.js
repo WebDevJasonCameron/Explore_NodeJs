@@ -16,11 +16,17 @@ app.get('', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-	res.render('about', {});
+	res.render('about', {
+		title: 'About Page',
+		name: 'Smash',
+	});
 });
 
 app.get('/help', (req, res) => {
-	res.render('help', {});
+	res.render('help', {
+		title: 'Help',
+		msg: 'A help message',
+	});
 });
 
 app.get('/weather', (req, res) => {
