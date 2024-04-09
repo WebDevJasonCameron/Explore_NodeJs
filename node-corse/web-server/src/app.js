@@ -21,6 +21,7 @@ app.get('', (req, res) => {
 	res.render('index', {
 		title: 'Weather App',
 		name: 'Smash',
+		creator: 'Jason',
 	});
 });
 
@@ -28,6 +29,7 @@ app.get('/about', (req, res) => {
 	res.render('about', {
 		title: 'About Page',
 		name: 'Smash',
+		creator: 'Jason',
 	});
 });
 
@@ -35,6 +37,7 @@ app.get('/help', (req, res) => {
 	res.render('help', {
 		title: 'Help',
 		msg: 'A help message',
+		creator: 'Jason',
 	});
 });
 
