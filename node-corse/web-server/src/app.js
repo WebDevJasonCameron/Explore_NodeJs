@@ -47,11 +47,19 @@ app.get('/weather', (req, res) => {
 
 // 404 handlers
 app.get('/help/*', (req, res) => {
-	res.send('Help Article Not Found');
+	res.render('404', {
+		title: '404',
+		msg: 'Help Page Not FOund',
+		creator: 'Jason',
+	});
 });
 
 app.get('*', (req, res) => {
-	res.send('My 404 Page');
+	res.render('404', {
+		title: '404',
+		msg: 'Page Not FOund',
+		creator: 'Jason',
+	});
 });
 
 // Running the Server
