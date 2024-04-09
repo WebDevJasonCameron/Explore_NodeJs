@@ -27,3 +27,14 @@
 - change view directory to 'templates'
 - add `const viewsPath = path.join(__dirname, '../templates')` within the app.js file
 - add `app.set('views', viewsPath)` within the app.js file to fix the broken path links
+- create a partials directory and a views directory within the templates directory
+- move the created views pages into the views directory within the parent template directory
+- update the path for views within the app.js as shown where: `const viewsPath = path.join(__dirname, '../templates/views');`
+
+## Adding Partials
+
+- add `const partialsPath = path.join(__dirname, '../templates/partials');` to app.js
+- add `hbs.registerPartials(partialsPath);` to app.js
+- create a partials file within the partials directory
+- add a simple h1 tag with test title data
+- to test within a hbs file, add `{{>header}}`
