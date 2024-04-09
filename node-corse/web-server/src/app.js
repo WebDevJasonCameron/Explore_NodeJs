@@ -45,6 +45,16 @@ app.get('/weather', (req, res) => {
 	res.send('<h2>Weather Page</h2>');
 });
 
+// 404 handlers
+app.get('/help/*', (req, res) => {
+	res.send('Help Article Not Found');
+});
+
+app.get('*', (req, res) => {
+	res.send('My 404 Page');
+});
+
+// Running the Server
 app.listen(3000, () => {
 	console.log('Server is up on port 3000');
 });
