@@ -11,3 +11,12 @@
    `npm install axios`
 
 3. Create Files: Inside your project directory, create three files: `index.html`, `styles.css`, and `script.js`.
+
+---
+
+## MongoDB
+
+1. to start use `brew services start mongodb-community@7.0`
+2. to end use `brew services stop mongodb-community@7.0`
+
+- these instructions are recieved from this website: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
