@@ -19,4 +19,10 @@
 1. to start use `brew services start mongodb-community@7.0`
 2. to end use `brew services stop mongodb-community@7.0`
 
-- these instructions are recieved from this website: https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+### Resources
+
+these instructions are recieved from this website:
+
+- https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+- https://www.npmjs.com/package/mongodb
+- https://www.mongodb.com/docs/drivers/node/current/quick-reference/#std-label-node-quick-reference
