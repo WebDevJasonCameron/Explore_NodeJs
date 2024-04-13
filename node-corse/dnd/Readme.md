@@ -16,8 +16,8 @@
 
 ## MongoDB
 
-1. to start use `brew services start mongodb-community@7.0`
-2. to end use `brew services stop mongodb-community@7.0`
+1. to start use `/Users/jasoncameron/mongodb/bin/mongod --dbpath=/Users/jasoncameron/mongodb-data`
+2. to end use `ctl + c` in the terminal window
 
 ### Resources
 
