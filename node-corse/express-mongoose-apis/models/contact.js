@@ -30,3 +30,4 @@ const contactSchema = new mongoos.Schema({
 		require: false,
 	},
 });
+module.exports = mongoos.model('Contact', contactSchema);
