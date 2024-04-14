@@ -6,21 +6,15 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const Contact = require('routes/Contact');
+const Contact = require('./routes/contacts');
 
 app.use('/api', Contact);
 
 // Connection from Mongoose to MongoDB
 const connectToDB = async () => {
 	try {
-		await mongoose.connect('mongodb://localhost:27017/mydatabase', {
-			useNewUrlParser: true,
-			useUnifiedTopology: true,
-		});
-	} catch {
-		error;
-	}
-	{
+		await mongoose.connect('mongodb://127.0.0.1:27017/mydatabase');
+	} catch (error) {
 		console.log(error);
 		process.exit(1);
 	}

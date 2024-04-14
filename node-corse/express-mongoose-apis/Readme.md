@@ -7,4 +7,7 @@
 - `npm install mongoose`
 - `npm install body-parser`
 
-3.
+### NOTE:
+
+The localhost uri might work at first, but you will get an error when you restart things. Try:
+`mongodb://127.0.0.1:27017/mydatabase` instead!

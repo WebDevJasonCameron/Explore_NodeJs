@@ -1,10 +1,11 @@
 // Contacts routes
 
 // CRUD routes -> /api/contacts
-const express = requuire('express');
+const express = require('express');
 const router = express.Router();
-const Contact = require('../models/Contact');
+const Contact = require('../models/contact');
 
+// URI route
 router.post('/contact', async (req, res) => {
 	try {
 		const newContact = new Contact(req.body);
@@ -16,6 +17,7 @@ router.post('/contact', async (req, res) => {
 			})
 			.catch((error) => {
 				console.log(error);
+
 				res.status(500).json({ msg: 'Unable to create new contact' });
 			});
 	} catch (error) {

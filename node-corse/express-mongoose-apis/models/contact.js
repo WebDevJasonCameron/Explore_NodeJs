@@ -10,7 +10,7 @@ const contactSchema = new mongoos.Schema({
 		trim: true,
 		validation: {
 			validator: function (value) {
-				const nameRegex = /^[a-AA-Z\s]*$/;
+				const nameRegex = /^[a-zA-Z\s]*$/;
 				return nameRegex.test(value);
 			},
 			message: 'First name must contain only alphabetic characters',
