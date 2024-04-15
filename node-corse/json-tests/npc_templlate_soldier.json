@@ -1,0 +1,62 @@
+{
+  "npc_template_type": "soldier",
+  "source": "rpg tinker",
+  "type": {
+    "race": "human",
+    "sex": "female",
+    "armor_class": "16 (Ring mail, Shield)",
+    "hit_points": "11 (2d8 +2)",
+    "speed": "30ft (9m / 6 sqr)",
+    "proficiency": "+2",
+    "challenge_rating": "1/4",
+    "xp": 50,
+    "racial_feature": {
+      "ability_modifiers": "+1 to all",
+      "languages": ["common", "on extra"]
+    }
+  },
+  "stats": {
+    "str": 13,
+    "str_mod": "+1",
+    "dex": 11,
+    "dex_mod": "+0",
+    "con": 13,
+    "con_mod": "+1",
+    "int": 11,
+    "int_mod": "+0",
+    "wis": 12, 
+    "wis_mod": "+12",
+    "cha": 9,
+    "cha_mod": "-1"
+  },
+  "actions": [{
+    "name": "shortsword",
+    "description": {
+      "type": "melee weapon attack",
+      "to_hit": "+3",
+      "reach": "5 ft",
+      "target": 1,
+      "hit": "4 (1d6 +1)",
+      "damage_type": "slashing"
+    }},{
+      "name": "light crossbow",
+      "description": {
+        "type": "ranged weapon attack",
+        "to_hit": "+2",
+        "reach": "80/320 ft",
+        "target": 1,
+        "hit": "4 (1d8 +0)",
+        "damage_type": "piercing"
+      }
+    }],
+  "special_abilities": [{
+    "name": "city defender",
+    "description": "The soldier can have proper housing and medical care inside the barracks of their nation without spending money."
+  },{
+    "name": "military training",
+    "description": "n case of need the soldier can only eat and drink half of the normal needed food for CON days. He can also do a forced march the double time than a normal adventurer."
+  },{
+    "name": "tool proficiency",
+    "description": "The soldier is proficient with Vehicles (land)."
+  }]
+}
