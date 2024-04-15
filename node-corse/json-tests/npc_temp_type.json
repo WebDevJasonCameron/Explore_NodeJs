@@ -1,0 +1,43 @@
+{
+  "template_id": 0,
+  "template": {
+    "template_type": "",
+    "source": "",
+    "attributes": {
+      "profession": "",
+      "armor_class": "",
+      "hit_points": "",
+      "speed": "",
+      "proficiency": "",
+      "challenge_rating": "",
+      "xp": 0
+    },
+    "class": [],
+    "ability_scores": {
+      "str": 0,
+      "str_mod": "",
+      "dex": 0,
+      "dex_mod": "",
+      "con": 0,
+      "con_mod": "",
+      "int": 0,
+      "int_mod": "",
+      "wis": 0, 
+      "wis_mod": "",
+      "cha": 0,
+      "cha_mod": ""
+    },
+    "actions": [],
+    "bonus_actions": [],
+    "reactions": [],
+    "legendary_actions": [],
+    "lare_actions": [],
+    "special_abilities": [],
+    "saving_throws": [],
+    "skills": [],
+    "senses": [],
+    "damage_resistances": [],
+    "condition_immunities": [],
+    "spells": []
+  }
+}
