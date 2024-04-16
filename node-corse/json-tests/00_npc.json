@@ -1,12 +1,12 @@
 {
-  "npc_name": "",
+  "npc_name": "",  
   "sex": "",
   "alignment": "",
   "avatar_img": "",
   "background": {},
-  "race": {},
+  "species": {},
   "class": [],
   "located": [],
-  "relations": [],
+  "affiliates": [],
   "inventory": []
 }

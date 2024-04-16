@@ -1,6 +1,7 @@
 {
-  "name": "",
+  "title": "",
   "description": {
+    "text": "",
     "type": "",
     "to_hit": "",
     "reach": "",
@@ -8,4 +9,5 @@
     "hit": "",
     "damage_type": "",
     "recharge": ""
-  }}
+  }
+}

@@ -1,12 +1,14 @@
 {
-  "name": "",
+  "title": "",
   "source": "",
+  "game": "",
+  "images": [],
   "template": {
     "attributes": {
       "size": "",
       "monster_tag": [],
       "enviornment": [],
-      "normal_alignment": [],
+      "alignment_according_to_source": [],
       "armor_class": "",
       "hit_points": "",
       "speed": "",
@@ -32,10 +34,13 @@
     "actions": [],
     "bonus_actions": [],
     "reactions": [],
-    "legendary_actions": [],
+
+    "legendary_actions": {},
     "lair_actions": [],
-    "special_abilities": [],
     "regional_effects": [],
+
+    "special_abilities": [],
+
     "lore": [],
 
     "saving_throws": [],
