@@ -1,18 +1,20 @@
 {
-  "template_id": 0,
+  "name": "",
+  "source": "",
   "template": {
-    "template_type": "",
-    "source": "",
     "attributes": {
-      "profession": "",
+      "size": "",
+      "monster_tag": [],
+      "enviornment": [],
+      "normal_alignment": [],
       "armor_class": "",
       "hit_points": "",
       "speed": "",
+      "senses": [],
       "proficiency": "",
       "challenge_rating": "",
       "xp": 0
     },
-    "class": [],
     "ability_scores": {
       "str": 0,
       "str_mod": "",
@@ -31,13 +33,18 @@
     "bonus_actions": [],
     "reactions": [],
     "legendary_actions": [],
-    "lare_actions": [],
+    "lair_actions": [],
     "special_abilities": [],
+    "regional_effects": [],
+    "lore": [],
+
     "saving_throws": [],
     "skills": [],
-    "senses": [],
+
     "damage_resistances": [],
     "condition_immunities": [],
+
+    "languages": [],
     "spells": []
   }
 }
